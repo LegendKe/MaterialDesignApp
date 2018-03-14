@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#303F9F</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#fff</color>
+
+
+    <color name="white">#ffffff</color>
+    <color name="white_d">#f9f9f9</color>
+    <color name="white_d_d">#c1c0c0</color>
+    <color name="white_d_d_d">#a1a1a1</color>
+    <color name="white_d_d_d_d">#818181</color>
+
+    <color name="dark">#000000</color>
+    <color name="dark_l">#101010</color>
+    <color name="dark_l_l">#252525</color>
+    <color name="dark_l_l_l">#2d2d2d</color>
+    <color name="dark_l_l_l_l">#4e4e4e</color>
+    <color name="dark_l_l_l_l_l">#5b5b5b</color>
+    <!--夜间主题基本色-->
+    <color name="dark_primary">#17181A</color>
+    <color name="dark_primary_dark">#17181a</color>
+    <color name="dark_accent">#6871fb</color>
+    <color name="dark_main_bg">#111214</color>
+    <color name="dark_vic_bg">#151518</color>
+    <color name="dark_main_text">#A2A3A3</color>
+    <color name="dark_vic_text">#5A5A5C</color>
+    <color name="dark_nav">#17181A</color>
+    <color name="dark_high_light">#4effffff</color>
+    <!--////////////////////////////////////////////////////////////////  -->
+    <!--日间主题基本色-->
+    <color name="white_primary">#C6045F</color>
+    <color name="white_primary_dark">#C6045F</color>
+    <color name="white_accent">#3e3e3e</color>
+    <color name="white_main_bg">#F2F4F5</color>
+    <color name="white_vic_bg">#E7E9E9</color>
+    <color name="white_main_text">#303131</color>
+    <color name="white_vic_text">#919293</color>
+    <color name="white_nav">#FFFFFF</color>
+    <color name="white_high_light">#4e000000</color>
+    <!--////////////////////////////////////////////////////////////////  -->
+
+    <!--夜间主题基本色-->
+    <color name="theme_dark_primary">@color/dark_primary</color> <!--标题栏背景色-->
+    <color name="theme_dark_primary_dark">@color/dark_primary_dark</color> <!--状态栏背景色-->
+    <color name="theme_dark_accent">@color/dark_accent</color> <!--控件首选色-->
+    <color name="theme_dark_main_bg">@color/dark_main_bg</color> <!--主背景色-->
+    <color name="theme_dark_vic_bg">@color/dark_vic_bg</color> <!--辅背景色-->
+    <color name="theme_dark_main_text">@color/dark_main_text</color> <!--主字体色-->
+    <color name="theme_dark_vic_text">@color/dark_vic_text</color> <!--辅字体色-->
+    <color name="theme_dark_nav">@color/dark_nav</color> <!--底部导航背景色-->
+    <color name="theme_dark_toolbar_main_text">@color/white_d</color> <!--标题栏主字体色-->
+    <color name="theme_dark_toolbar_vic_text">@color/white_d_d</color> <!--标题栏辅字体色-->
+    <!--日间主题基本色-->
+    <color name="theme_white_primary">@color/white_primary</color>
+    <color name="theme_white_primary_dark">@color/dark_accent</color>
+    <color name="theme_white_accent">@color/white_accent</color>
+    <color name="theme_white_main_bg">@color/white_main_bg</color>
+    <color name="theme_white_vic_bg">@color/white_vic_bg</color>
+    <color name="theme_white_main_text">@color/white_main_text</color>
+    <color name="theme_white_vic_text">@color/white_vic_text</color>
+    <color name="theme_white_nav">@color/white_nav</color>
+    <color name="theme_white_toolbar_main_text">@color/white_d</color>
+    <color name="theme_white_toolbar_vic_text">@color/white_d_d</color>
+
+    <color name="colorWhiteAlpha_start">#33424242</color>
+    <color name="colorWhiteAlpha_end">#00424242</color>
+</resources>

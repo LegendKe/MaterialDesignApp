@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">CollapsingToolbarLayout</string>
+    <string name="close">close</string>
+    <string name="open">open</string>
+    <string name="my_txt">CoordinatorLayout:
+
+Coordinator : 协调。
+协调(Coordinate)其他组件, 实现联动的布局。只有最外层是这个布局，一些滚动行为的参数才能使用。
+
+AppBarLayout：
+
+AppBarLayout会将它内部的所有控件组合成一个toolbar，它继承自LinearLayout，布局方向为垂直方向。它可以设置当某个可滚动View的滚动手势发生变化时，其内部的子View如何动作。
+
+CollapsingToolbarLayout：
+
+实现可折叠toolbar的布局。通过设置一些属性实现可折叠的toolbar。
+
+Toolbar：完美代替actionbar的新控件。
+
+NestedScrollView
+
+Nested：嵌套
+NestedScrollView代替了ScrollView。 它符合MD设计风格，并且能更好的和其它新控件配合。它自己布局内的子View滚动的时候会自动触发CoordinatorLayout中设置的ToolBar的滑入滑出, 它符合MD设计风格，并且能更好的和其它新控件配合。它自己布局内的子View滚动的时候会自动触发CoordinatorLayout中设置的ToolBar的滑入滑出,
+        它符合MD设计风格，并且能更好的和其它新控件配合。它自己布局内的子View滚动的时候会自动触发CoordinatorLayout中设置的ToolBar的滑入滑出。</string>
+    <string name="setting_main_theme"><u>主题色定制</u></string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+</resources>

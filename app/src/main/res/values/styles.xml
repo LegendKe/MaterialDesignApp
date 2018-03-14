@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+
+    <style name="SearchActivity.Animation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right_no_alpha</item>
+    </style>
+
+    <style name="AppTheme.Transparent" parent="AppTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/SearchActivity.Animation</item>
+    </style>
+
+    <style name="Theme.Search.WHITE" parent="AppTheme.Transparent">
+        <item name="colorPrimary">@color/colorWhite</item>
+        <!--<item name="colorPrimaryDark">@color/theme_white_primary_dark</item>-->
+        <!--<item name="colorAccent">@color/theme_white_accent</item>-->
+        <!--<item name="android:textColorHint">@color/default_text_hint</item>-->
+        <!--<item name="android:textColorPrimary">@color/theme_white_main_text</item>-->
+        <!--<item name="android:textColorSecondary">@color/theme_white_vic_text</item>-->
+
+        <!--<item name="android:colorControlActivated">@color/theme_white_accent</item>-->
+        <!--<item name="android:colorControlHighlight">@color/white_high_light</item>-->
+        <!--<item name="android:colorControlNormal">@color/theme_white_vic_text</item>-->
+        <!--<item name="android:navigationBarColor">@color/theme_dark_main_bg</item>-->
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+</resources>
