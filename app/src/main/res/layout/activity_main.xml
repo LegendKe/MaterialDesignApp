@@ -4,12 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <include layout="@layout/view_main" />
+    <include layout="@layout/view_main_activity" />
 
     <fragment
-        android:name="com.example.kechuanqi.collapsingtoolbarlayout.SettingFragment"
-        android:layout_width="250dp"
+        android:name="com.example.kechuanqi.materialdesign.SettingFragment"
+        android:layout_width="240dp"
         android:layout_height="match_parent"
-        android:layout_gravity="left">
+        android:layout_gravity="left"
+        android:layout_marginTop="20dp">
     </fragment>
 </android.support.v4.widget.DrawerLayout>

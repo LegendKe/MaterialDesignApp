@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CollapsingToolbarLayout</string>
+    <string name="app_name">MaterialDesignApp</string>
     <string name="close">close</string>
     <string name="open">open</string>
     <string name="my_txt">CoordinatorLayout:
@@ -23,6 +23,7 @@ Nested：嵌套
 NestedScrollView代替了ScrollView。 它符合MD设计风格，并且能更好的和其它新控件配合。它自己布局内的子View滚动的时候会自动触发CoordinatorLayout中设置的ToolBar的滑入滑出, 它符合MD设计风格，并且能更好的和其它新控件配合。它自己布局内的子View滚动的时候会自动触发CoordinatorLayout中设置的ToolBar的滑入滑出,
         它符合MD设计风格，并且能更好的和其它新控件配合。它自己布局内的子View滚动的时候会自动触发CoordinatorLayout中设置的ToolBar的滑入滑出。</string>
     <string name="setting_main_theme"><u>主题色定制</u></string>
+    <string name="setting_main_theme2"><u>主题色定制2</u></string>
     <string name="title_activity_settings">Settings</string>
 
     <!-- Strings related to Settings -->
@@ -94,6 +95,9 @@ NestedScrollView代替了ScrollView。 它符合MD设计风格，并且能更好
 
     <string name="pref_title_ringtone">Ringtone</string>
     <string name="pref_ringtone_silent">Silent</string>
-
     <string name="pref_title_vibrate">Vibrate</string>
+    <string name="reveal_body1">Circular Reveal Animation starting from the center of target view</string>
+    <string name="reveal_body2">Circular Reveal Animation starting from touch coordinates</string>
+    <string name="reveal_body3">View layout change animation with Circular Reveal Animation on finish</string>
+    <string name="reveal_body4">Circular Reveal Animation from top with nested animations on end</string>
 </resources>

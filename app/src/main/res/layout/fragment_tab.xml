@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="160dp"
+    android:paddingBottom="50dp">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/img05"
+        android:transitionName="logo"/>
+    <TextView
+        android:id="@+id/tv_content"
+        android:textSize="18sp"
+        android:text="11111111111"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/iv_logo"
+        android:gravity="center_vertical"
+       android:layout_marginLeft="12dp"/>
+
+    <Button
+        android:id="@+id/btn_jump2Activity"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="DEMO"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/shape_btn_round_corner"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>
