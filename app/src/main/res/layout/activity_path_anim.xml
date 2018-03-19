@@ -1,9 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_svg"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.kechuanqi.materialdesign.activity.PathAnimActivity">
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imageView"
+        android:src="@drawable/animated_sl_plusmius"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+    <ImageView
+        android:id="@+id/iv_light"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/define_state"
+        android:layout_below="@+id/imageView"
+        android:layout_margin="30dp"/>
+
+    <ImageView
+        android:id="@+id/iv_animatorSelector"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/animated_sl_light"
+        android:layout_alignParentRight="true"/>
+
+    <ImageView
+        android:id="@+id/iv_numberChange"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="30dp"
+        android:src="@drawable/animated_sl_digits"/>
+</LinearLayout>

@@ -75,10 +75,10 @@ public class SearchActivity extends BaseActivity{
             @Override
             public void onAnimationEnd(Animation animation) {
                 recyclerView.setVisibility(View.GONE);
-                SearchActivity.super.finish();
                 overridePendingTransition(
                         R.anim.slide_in_right_no_alpha,
                         R.anim.slide_out_right_no_alpha);
+                SearchActivity.super.finish();
             }
 
             @Override

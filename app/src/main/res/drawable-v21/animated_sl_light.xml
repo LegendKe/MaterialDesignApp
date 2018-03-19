@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/state_on"
+        android:drawable="@drawable/ic_lamp"
+        android:state_checked="false" />
+
+    <item
+        android:id="@+id/state_off"
+        android:state_checked="true"
+        android:drawable="@drawable/ic_lamp3" />
+
+    <transition
+        android:fromId="@id/state_on"
+        android:toId="@id/state_off">
+        <animation-list>
+            <item
+                android:drawable="@drawable/ic_lamp"
+                android:duration="30" />
+            <item
+                android:drawable="@drawable/ic_lamp1"
+                android:duration="30" />
+            <item
+                android:drawable="@drawable/ic_lamp2"
+                android:duration="30" />
+            <item
+                android:drawable="@drawable/ic_lamp3"
+                android:duration="30" />
+        </animation-list>
+    </transition>
+</animated-selector>

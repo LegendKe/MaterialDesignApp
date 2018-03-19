@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:drawable="@drawable/vector_pathmorph_digits_zero">
+
+  <target android:name="iconPath"
+      android:animation="@animator/animation_digits_0_to_1">
+  </target>
+
+</animated-vector>

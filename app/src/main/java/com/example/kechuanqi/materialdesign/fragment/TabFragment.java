@@ -55,13 +55,24 @@ public class TabFragment extends BaseFragment {
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     private void doClick() {
-        tv_content.setTransitionName(MainFragmentPagerAdapter.pagerTitles[position]);
-        iv_logo.setTransitionName(MainFragmentPagerAdapter.pagerTitles[position]+position);
         Intent intent = new Intent(getActivity(), MainFragmentPagerAdapter.activities[position]);
-        intent.putExtra("transitionName",tv_content.getTransitionName());
-        Pair<View, String> pair = Pair.create(tv_content, tv_content.getTransitionName());
-        Pair<View, String> logoPair = Pair.create(iv_logo, iv_logo.getTransitionName());
-        getActivity().startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(getActivity(),pair,logoPair).toBundle());
+        switch (position){
+            case 0:
+            case 1:
+            case 3:
+            case 4:
+            case 5:
+                tv_content.setTransitionName(MainFragmentPagerAdapter.pagerTitles[position]);
+                iv_logo.setTransitionName(MainFragmentPagerAdapter.pagerTitles[position]+position);
+                intent.putExtra("transitionName",tv_content.getTransitionName());
+                Pair<View, String> pair = Pair.create(tv_content, tv_content.getTransitionName());
+                Pair<View, String> logoPair = Pair.create(iv_logo, iv_logo.getTransitionName());
+                getActivity().startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(getActivity(),pair,logoPair).toBundle());
+                break;
+            case 2://SearchActivity
+                getActivity().startActivity(intent);
+                break;
+        }
     }
 
     @Override

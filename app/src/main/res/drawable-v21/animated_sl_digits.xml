@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/one"
+        android:drawable="@drawable/vector_pathmorph_digits_one"
+        app:state_one="true"/>
+    <item
+        android:id="@+id/zero"
+        android:drawable="@drawable/vector_pathmorph_digits_zero"
+        app:state_zero="false"
+        />
+    <transition
+        android:drawable="@drawable/animated_vector_pathmorph_digits_0_to_1"
+        android:fromId="@id/zero"
+        android:toId="@id/one"/>
+
+</animated-selector>

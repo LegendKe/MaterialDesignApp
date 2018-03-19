@@ -9,4 +9,13 @@
             <enum name="vertical" value="1" />
         </attr>
     </declare-styleable>
+
+    <declare-styleable name="state">
+        <attr name="state_on" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="DigitState">
+        <attr name="state_zero" format="boolean"/>
+        <attr name="state_one" format="boolean"/>
+    </declare-styleable>
 </resources>
