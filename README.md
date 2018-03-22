@@ -3,10 +3,5 @@
 </br>
 ![](https://github.com/LegendKe/MaterialDesignApp/app/src/main/res/raw/path.gif)
 </br>
-![](https://github.com/LegendKe/MaterialDesignApp/app/src/main/res/raw/reveal.gif)
-</br>
-![](https://github.com/LegendKe/MaterialDesignApp/app/src/main/res/raw/search.gif)
-</br>
 ![](https://github.com/LegendKe/MaterialDesignApp/app/src/main/res/raw/share_element.gif)
-</br>
-![](https://github.com/LegendKe/MaterialDesignApp/app/src/main/res/raw/theme.gif)
+
