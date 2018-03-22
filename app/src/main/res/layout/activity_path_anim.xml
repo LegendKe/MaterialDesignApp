@@ -6,32 +6,32 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:gravity="center_horizontal">
-
+    android:gravity="center_horizontal"
+    >
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/iv_plus_minus"
         android:src="@drawable/animated_sl_plusmius"
-        android:layout_width="100dp"
-        android:layout_height="100dp"/>
-    <ImageView
-        android:id="@+id/iv_light"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:src="@drawable/define_state"
-        android:layout_below="@+id/imageView"
-        android:layout_margin="30dp"/>
-
-    <ImageView
-        android:id="@+id/iv_animatorSelector"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/animated_sl_light"
-        android:layout_alignParentRight="true"/>
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"/>
 
     <ImageView
         android:id="@+id/iv_numberChange"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_margin="30dp"
         android:src="@drawable/animated_sl_digits"/>
+
+    <ImageView
+        android:id="@+id/iv_record"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="30dp"
+        android:src="@drawable/animated_selector_shape"/>
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="20dp" />
 </LinearLayout>

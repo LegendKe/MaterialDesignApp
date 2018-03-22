@@ -30,7 +30,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        android:background="@color/colorWhite"
+        android:background="@color/white_d_d_d_d"
         android:visibility="invisible">
     </android.support.v7.widget.RecyclerView>
 </android.support.design.widget.CoordinatorLayout>

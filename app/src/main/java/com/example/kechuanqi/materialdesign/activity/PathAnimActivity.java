@@ -1,25 +1,23 @@
 package com.example.kechuanqi.materialdesign.activity;
 
-import android.util.Log;
+import android.animation.ValueAnimator;
+import android.support.v7.graphics.drawable.DrawerArrowDrawable;
 import android.view.View;
 import android.widget.ImageView;
 
 import com.example.kechuanqi.materialdesign.R;
 import com.example.kechuanqi.materialdesign.base.BaseActivity;
-import com.example.kechuanqi.materialdesign.view.PathAnimView;
 
 public class PathAnimActivity extends BaseActivity implements View.OnClickListener {
 
-    private PathAnimView pathAnimView;
-    private ImageView iv_light;
-    private ImageView mImageView;
+    private ImageView iv_plusMinus;
     private boolean mIsChecked = false;
-    private ImageView iv_animatorSelector;
-    private static final int[] STATE_CHECKED = new int[]{android.R.attr.state_checked};
-    private static final int[] STATE_UNCHECKED = new int[]{};
-    private boolean flag;
     private ImageView iv_numberChange;
     private int mCurrentNum = 0;
+    private ImageView iv_back;
+    private DrawerArrowDrawable drawerArrowDrawable;
+    private ImageView iv_record;
+    private boolean isChecked;
 
     @Override
     protected int setLayoutId() {
@@ -30,39 +28,29 @@ public class PathAnimActivity extends BaseActivity implements View.OnClickListen
     protected void initView() {
         super.initView();
 
-        iv_light = ((ImageView) findViewById(R.id.iv_light));
-        iv_light.setOnClickListener(this);
-        mImageView = (ImageView) findViewById(R.id.imageView);
-        mImageView.setOnClickListener(this);
-        iv_animatorSelector = ((ImageView) findViewById(R.id.iv_animatorSelector));
-        iv_animatorSelector.setOnClickListener(this);
+        iv_plusMinus = (ImageView) findViewById(R.id.iv_plus_minus);
+        iv_plusMinus.setOnClickListener(this);
         iv_numberChange = ((ImageView) findViewById(R.id.iv_numberChange));
         iv_numberChange.setOnClickListener(this);
+        iv_back = ((ImageView) findViewById(R.id.iv_back));
+        drawerArrowDrawable = new DrawerArrowDrawable(this);
+        drawerArrowDrawable.setColor(getResources().getColor(R.color.colorAccent));
+        iv_back.setImageDrawable(drawerArrowDrawable);
+        iv_back.setOnClickListener(this);
+        iv_record = ((ImageView) findViewById(R.id.iv_record));
+        iv_record.setOnClickListener(this);
     }
     @Override
     public void onClick(View view){
         switch (view.getId()) {
-            case R.id.iv_light:
-                iv_light.setImageState(new int[]{R.attr.state_on},true);
-                break;
-            case R.id.imageView:
+            case R.id.iv_plus_minus://+-切换
                 mIsChecked = !mIsChecked;
                 final int[] stateSet = {android.R.attr.state_checked * (mIsChecked ? 1 : -1)};
-                mImageView.setImageState(stateSet, true);
+                iv_plusMinus.setImageState(stateSet, true);
                 break;
-            case R.id.iv_animatorSelector:
-                if (flag) {
-                    iv_animatorSelector.setImageState(STATE_UNCHECKED, true);
-                    flag = false;
-                } else {
-                    iv_animatorSelector.setImageState(STATE_CHECKED, true);
-                    flag = true;
-                }
-                break;
-            case R.id.iv_numberChange:
-                Log.e("TAG","iv_numberChange onClick()");
+            case R.id.iv_numberChange://数字切换
                 mCurrentNum++;
-                if (mCurrentNum > 9) {
+                if (mCurrentNum > 1) {
                     mCurrentNum = 0;
                 }
                 int[] state = new int[DIGIT_STATES.length];
@@ -73,11 +61,38 @@ public class PathAnimActivity extends BaseActivity implements View.OnClickListen
                         state[i] = -DIGIT_STATES[i];
                     }
                 }
-//                iv_numberChange.setImageState(state, true);
-                iv_numberChange.setImageState(new int[]{-DIGIT_STATES[0],DIGIT_STATES[1]}, true);
+                iv_numberChange.setImageState(state, true);
+                break;
+            case R.id.iv_back://返回 原生
+                mIsChecked = !mIsChecked;
+                drawerArrowChange(mIsChecked);
+                break;
+            case R.id.iv_record://录像
+                isChecked = !isChecked;
+                final int[] stateSet2 = {android.R.attr.state_checked * (isChecked ? 1 : -1)};
+                iv_record.setImageState(stateSet2,true);
                 break;
         }
     }
+
+    private void drawerArrowChange(boolean isChecked) {
+        ValueAnimator animator;
+        if(isChecked){
+            animator = ValueAnimator.ofFloat(0.0f, 1.0f);
+        }else {
+            animator = ValueAnimator.ofFloat(1.0f, 0.0f);
+        }
+        animator.setDuration(400);
+        animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator arg0) {
+                float animatedValue = (float) arg0.getAnimatedValue();
+                drawerArrowDrawable.setProgress(animatedValue);
+            }
+        });
+        animator.start();
+    }
+
     private static final int[] DIGIT_STATES = {
             R.attr.state_zero,
             R.attr.state_one,

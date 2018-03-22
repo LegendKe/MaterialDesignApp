@@ -10,11 +10,13 @@
     <item
         android:id="@+id/zero"
         android:drawable="@drawable/vector_pathmorph_digits_zero"
-        app:state_zero="false"
         />
     <transition
         android:drawable="@drawable/animated_vector_pathmorph_digits_0_to_1"
         android:fromId="@id/zero"
         android:toId="@id/one"/>
-
+    <transition
+        android:drawable="@drawable/animated_vector_pathmorph_digits_1_to_0"
+        android:fromId="@id/one"
+        android:toId="@id/zero"/>
 </animated-selector>
